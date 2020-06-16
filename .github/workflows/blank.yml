@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: docker://dutymachine/weixin-archive-action:latest
+      - uses: duty-machine/weixin-archive-action@master
         env:
           TOKEN: ${{ github.token }}
           REPOSITORY: ${{ github.repository }}
